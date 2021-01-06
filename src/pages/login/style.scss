@@ -1,0 +1,64 @@
+.signin-form {
+  display: flex;
+  flex-direction: column;
+  left: 50%;
+  max-width: 264px;
+  position: absolute;
+  top: 39%;
+  transform: translateX(-50%);
+  width: 264px;
+
+
+  input {
+    border: 0;
+    border-bottom: 1px solid #e6e6e6;
+    color: #808080;
+    font-size: 0.9rem;
+    padding: 10px 0;
+
+    &:focus {
+      border-bottom: 1px solid #979595;
+      outline: none;
+      transition: border-bottom 0.2s ease-in-out;
+    }
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active {
+      box-shadow: 0 0 0 30px #fff inset !important;
+      -webkit-text-fill-color: #808080;
+    }
+  }
+
+  &__username-input {
+    margin-bottom: 22px;
+  }
+
+  &__password-input {
+    margin-bottom: 36px;
+  }
+
+  button {
+    background-color: #6fb553;
+    border: 0;
+    border-radius: 25px;
+    box-shadow: 0 0 17px -4px rgba(203, 233, 195, 1);
+    color: #fff;
+    font-size: 0.7rem;
+    height: 34px;
+
+    &:hover {
+      background-color: #6daf54;
+      cursor: pointer;
+      transition: background-color 0.2s ease-in-out;
+    }
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 0 17px -4px rgb(79, 93, 75);
+      outline: none;
+      transition: box-shadow 0.2s ease-in-out;
+    }
+  }
+}

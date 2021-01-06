@@ -6,13 +6,15 @@ import Login from '@pages/login';
 
 import './style.scss';
 
+const loginPath = '/login';
+
 const App: FC = () => (
   <Switch>
     <Route exact path="/">
-      <Redirect to="/fieldPage" />
+      <Redirect to="/home" />
     </Route>
-    <PrivateRoute exact path="/fieldPage" component={Field} />
-    <Route path="/login" component={Login} />
+    <PrivateRoute exact path="/home" component={Field} loginPath={loginPath} />
+    <Route path={loginPath} component={Login} />
     <Redirect to="/" />
   </Switch>
 );

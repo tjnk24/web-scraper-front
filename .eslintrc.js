@@ -21,7 +21,9 @@ module.exports = {
         "@typescript-eslint"
     ],
     "rules": {
+        'indent': ['error', 2],
         'import/no-unresolved': 'off',
+        'no-unused-vars': 'warn',
         'import/extensions': 'off',
         'react/prop-types': 'off',
         'react/jsx-props-no-spreading': 'off',
