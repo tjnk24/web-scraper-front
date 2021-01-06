@@ -1,0 +1,42 @@
+.homepage-wrapper {
+  background-color: #f5f5dc;
+  height: 100%;
+  width: 100%;
+}
+
+.homepage-form {
+  display: flex;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+
+  input {
+    border: 2px solid #979595;
+    border-radius: 10px;
+    color: #808080;
+    font-size: 1.2rem;
+    height: 50px;
+    padding: 10px 15px;
+    width: 700px;
+
+    &:focus {
+      box-shadow: 0 0 17px -4px rgb(79, 93, 75);
+      outline: none;
+      transition: box-shadow 0.2s ease-in-out;
+    }
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active {
+      box-shadow: 0 0 0 30px #fff inset !important;
+      -webkit-text-fill-color: #808080;
+    }
+
+    &::placeholder {
+      color: #cac9c9;
+    }
+  }
+
+}

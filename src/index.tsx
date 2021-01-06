@@ -6,7 +6,7 @@ import App from '@components/app';
 
 const app = (
   <BrowserRouter>
-    <App/>
+    <App />
   </BrowserRouter>
 );
 
